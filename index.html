@@ -43,6 +43,11 @@
       </div>
 
       <div>
+        <label for="EmailAddress">Email Address</label><br>
+        <input type="text" name="Email_Address" id="EmailAddress" placeholder="Email Address" required>
+      </div>
+
+      <div>
         <fieldset>
           <legend>Interested In</legend>
           <label>
@@ -76,6 +81,21 @@
       </div>
 
       <div>
+        <label for="City">City</label><br>
+        <input type="text" name="City" id="City" placeholder="City" required>
+      </div>
+
+      <div>
+        <label for="StreetAddress">Street Address</label><br>
+        <input type="text" name="Street_Address" id="StreetAddress" placeholder="Street Address" required>
+      </div>
+
+      <div>
+        <label for="PostalCode">Postal Code</label><br>
+        <input type="text" name="Postal_Code" id="PostalCode" placeholder="Postal Code" required>
+      </div>
+
+      <div>
         <label for="Note">Note</label><br>
         <textarea id="Note" name="Note" placeholder="Place any special instructions here" rows="4" cols="42"></textarea>
       </div>
@@ -87,7 +107,7 @@
   </div>
     <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Selomea Beyene, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
@@ -110,6 +130,8 @@
           case "Last_Name":
           case "City":
           case "Street_Address":
+          case "Postal_Code":
+          case "Email_Address":
             value = titleCase(value);
           break; 
         }
